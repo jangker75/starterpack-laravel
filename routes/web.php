@@ -3,19 +3,23 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['auth'])->group(function () {
+Route::group([
+    'middleware' => ['is_admin'],
+    'as' => 'admin.',
+    'prefix' => 'admin'
+],function () {
     Route::get('/', function () {
         return view('view');
     });
 });
 
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
-Route::get('/logout', function () {
-    return view('logout');
-});
+// Route::get('/logout', function () {
+//     return view('logout');
+// });
 
-Route::post('/login',[AuthController::class,'login'])->name('login');
+// Route::post('/login',[AuthController::class,'login'])->name('login');

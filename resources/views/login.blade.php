@@ -8,8 +8,8 @@
             <div class="auth-box h-full flex flex-col justify-center">
                 <div class="mobile-logo text-center mb-6 lg:hidden block">
                     <a href="index.html">
-                        <img src="{{ asset('public/assets/images/logo/logo.svg') }}" alt="" class="mb-10 dark_logo">
-                        <img src="{{ asset('public/assets/images/logo/logo-white.svg') }}" alt=""
+                        <img src="{{ asset('/assets/images/logo/logo.svg') }}" alt="" class="mb-10 dark_logo">
+                        <img src="{{ asset('/assets/images/logo/logo-white.svg') }}" alt=""
                             class="mb-10 white_logo">
                     </a>
                 </div>
@@ -72,25 +72,25 @@
                         <li class="flex-1">
                             <a href="#"
                                 class="inline-flex h-10 w-10 bg-[#1C9CEB] text-white text-2xl flex-col items-center justify-center rounded-full">
-                                <img src="{{ asset('public/assets/images/icon/tw.svg') }}" alt="">
+                                <img src="{{ asset('/assets/images/icon/tw.svg') }}" alt="">
                             </a>
                         </li>
                         <li class="flex-1">
                             <a href="#"
                                 class="inline-flex h-10 w-10 bg-[#395599] text-white text-2xl flex-col items-center justify-center rounded-full">
-                                <img src="{{ asset('public/assets/images/icon/fb.svg') }}" alt="">
+                                <img src="{{ asset('/assets/images/icon/fb.svg') }}" alt="">
                             </a>
                         </li>
                         <li class="flex-1">
                             <a href="#"
                                 class="inline-flex h-10 w-10 bg-[#0A63BC] text-white text-2xl flex-col items-center justify-center rounded-full">
-                                <img src="{{ asset('public/assets/images/icon/in.svg') }}" alt="">
+                                <img src="{{ asset('/assets/images/icon/in.svg') }}" alt="">
                             </a>
                         </li>
                         <li class="flex-1">
                             <a href="#"
                                 class="inline-flex h-10 w-10 bg-[#EA4335] text-white text-2xl flex-col items-center justify-center rounded-full">
-                                <img src="{{ asset('public/assets/images/icon/gp.svg') }}" alt="">
+                                <img src="{{ asset('/assets/images/icon/gp.svg') }}" alt="">
                             </a>
                         </li>
                     </ul>
