@@ -3,7 +3,6 @@
 @section('title', 'Sign In')
 
 @section('contentAuth')
-
     <div class="right-column  relative">
         <div class="inner-content h-full flex flex-col bg-white dark:bg-slate-800">
             <div class="auth-box h-full flex flex-col justify-center">
@@ -20,8 +19,18 @@
                         Sign in to your account to start using Dashcode
                     </div>
                 </div>
+                @if ($errors->any())
+                    <div>
+                        @foreach ($errors->all() as $item)
+                            <h6 class="text-center text-red-500">{{ $item }}</h6>
+                        @endforeach
+                    </div>
+                @endif
+
+
                 <!-- BEGIN: Login Form -->
-                <form class="space-y-4" action='index.html'>
+                <form class="space-y-4" action='{{ route('login') }}' method="post">
+                    @csrf
                     <div class="fromGroup">
                         <label class="block capitalize form-label">email</label>
                         <div class="relative ">
